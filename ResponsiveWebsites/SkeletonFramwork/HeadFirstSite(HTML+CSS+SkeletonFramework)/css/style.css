@@ -1,0 +1,95 @@
+/* Table of Contents
+––––––––––––––––––––––––––––––––––––––––––––––
+- General Content
+- Typography
+- content
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* General Content
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.main{padding-top: 3%;}
+.row{padding: 2% 0;}
+.classhead{ background-color:#412A85; }
+.classfoo{ 	background-color: #231F20; display: block;}
+.cont{ border:10px; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––– */
+body
+{
+    font-family: 'Able',sans-serif;
+    font-size: 2.5em;
+    color: #231F20;
+}
+h7
+{
+    font-family:monospace;
+    font-size: 1.1em;
+    margin: 0.50em;
+}
+
+span{ font-size: 1.5em;}
+
+/*Header & Navigation
+ ---------------------------------------*/
+header.main_navbar
+{
+	padding: 1% 0;
+	display: block;
+}
+.logo
+{
+	margin: 5% auto;
+	text-align: center;
+}
+.logo a
+{
+	font-size: 2em;
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 2px 10px 0 10px;
+	border: 3px solid #FFF;
+	margin: 0;
+}
+.logo a:hover
+{
+	background-color: #FFF;
+	color: #412A85;
+}
+
+/*Images & Media
+ ---------------------------------------*/
+img
+{
+	max-width: 70%;
+	max-height: 60%;
+}
+img:hover{opacity: 0.8;}
+
+/* footer
+ ----------------------------------------*/
+p.copyright, p.by
+{
+    color: white;
+    font-size: .5em;
+	text-align: center;
+}
+/*p.copyright
+{
+	float: left;
+	padding-left: -1000px;
+	margin-top: 10px;
+	
+}*/
+/*p.by
+{ 
+	float: right;
+   padding-right: 150px;
+	margin-top: 10px;
+}*/

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script Day3 </title>
+</head>
+<!-- ***************** Q1 , Q3 ********************* -->
+<body onkeydown="stop(event)" onload="OpenWin()">
+	<div>
+		<p>To know key pressed click key, which mouse button clicked use R or L </p>
+	    <input type="text" name="texbox" onkeypress="Getkey(event)" onmousedown="Getbtn(event)"><br><br>
+	</div>
+	<!-- ***************** Q2 ********************* -->
+	<div style="background-color: red;"><br></div>
+    <div>
+    	<br>
+    	<button onClick="start()">Start clock</button>
+        <input type="text" id="txt">
+        <br>
+        <br>
+    </div>
+    <!--***************** Q4 *********************-->
+    <div style="background-color: red;"><br></div>
+    <br>
+    <form action="redirect.html" method="get" name="f1">
+    	<label>Name</label>
+    	<input type="text" name="usrname" placeholder="Enter your user name here"><br>
+    	<label>password</label>
+    	<input type="password" name="password"><br>
+    	<button>submit</button>
+    </form>
+<script type="text/javascript">
+	
+	var dat =" ",mytime;
+// Q1	
+function Getkey(e)
+{
+	var key = e.keyCode;
+    alert("the code of key you pressed: "+key);
+}
+//Q1
+function Getbtn(e)
+{
+ 	var btn = e.button;
+
+	if(btn == 0)
+	{
+		alert("left clicked");
+	}
+	else if(btn == 2)
+	{
+		alert("right clicked");
+	}
+	else{alert("you not use R or left try again");}
+}
+//Q1
+function re_fresh(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('start()',refresh);
+}
+//Q2
+function start()
+{
+	dat =new Date();
+    document.getElementById('txt').value= dat.toLocaleTimeString();
+   // alert(dat.toLocaleTimeString())
+    //debugger;
+    re_fresh();
+}
+//Q2
+function stop(e){
+     var key = e.keyCode;
+     if(key == 83)
+     {
+        clearInterval(mytime); 
+        alert("Great! counter is stop now")    	
+     }
+     else{
+     	alert("You must click s letter from keybord to stop clock");
+     }
+}
+//Q3
+function OpenWin()
+{
+	win1=window.open('newWin.html','_Blank', 'width=600,height=600' ,'status=1','scrollbars=1');
+}
+//Q4
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+div
+{
+	color: #FFF;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	position: absolute;
+	/*z-index: auto;*/
+}
+.div1
+{
+	background: #F00;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+.div2
+{
+  background: #00F;
+	top: 20px;
+	left: 20px;	
+	z-index: 2;
+}
+
+.div3
+{
+	background: #080;
+	top: 40px;
+	left: 40px;
+  /*z-index: 0;*/ /*لايستخدم 0 يبدأ من 1 */ 
+}

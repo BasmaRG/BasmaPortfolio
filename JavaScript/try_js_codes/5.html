@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5 </title>
+</head>
+<body>
+	<button onclick="date()">show date</button>
+<script type="text/javascript">
+
+function date()
+{
+	var date,bool;
+	date = color = prompt("Enter data (DD–MM–YYYY) ex. 22–01–1999");
+	bool = checkStr(date);
+	/*if(bool){
+		fnDate();
+	}
+	else{
+			alert("Wong Date Format");
+		}*/
+}
+function checkStr(str)
+{
+	var count, has_, len , subfrom2_6 ,first , last, m,d,y;
+	len =str.length;
+	//alert(len);
+    if(len == 10)
+    {
+    	count = true;
+    	// substring to know _
+        subfrom2_6 = str.substring(2,6); // -mm-
+        first =  subfrom2_6.charAt(0);
+        last =  subfrom2_6.charAt(3);
+        //alert(subfrom2_6); 
+        //alert(first);
+        //alert(last);
+        if(first && last == '-'){
+            has_ = true;
+            //alert(has_);
+            // --_ --_ ---- 
+            // 012 345 6789
+            d = str.substring(0,2);
+            m = str.substring(3,5);
+            y = str.substring(6,10);
+            /*alert(d);
+            alert(m);
+            alert(y);*/
+            fnDate(y,m,d);
+            document.write("<br>you entered: ", str);
+        }
+        else{
+        	alert("Date not correct, date should sparated by -");
+        }
+    	
+    }
+    else
+    	(
+    		alert("Date not correct, length should be 10"))
+
+   //debugger;
+}
+function fnDate(y,m,d){
+
+    /*var myDate = new Date(y,m,d);
+    document.write(myDate);*/
+    //Sat Apr 02 2005 00:00:00 GMT+0200 (Eastern European Standard Time) you entered: 02-03-2005
+  
+    var myDate = new Date(y,m,d);
+    alert(m);
+    document.write(myDate);
+    /* var collect =(y+ '-' +m + '-'+d );
+       var myDate1 = new Date(collect);
+       document.write(myDate1);*/
+       ///Wed Mar 02 2005 02:00:00 GMT+0200 (Eastern European Standard Time) you entered: 02-03-2005
+
+}
+</script>
+</body>
+</html>

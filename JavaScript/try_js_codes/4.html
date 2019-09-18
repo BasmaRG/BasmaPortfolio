@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4 </title>
+</head>
+<body>
+<button onclick="Show();">Show date and time</button>
+<script type="text/javascript">
+function Show()
+{
+	//( ? : )
+  var now = new Date ();
+  var arr = new Array();
+  arr['g'] = 'green';
+  arr['r'] = 'red';
+  arr['b'] = 'blue';
+  var color , colors ,temp_color,temp_index;
+  color = prompt("Enter your fav color (r) red, (b) blue, (g) green");
+  var dt = now.toLocaleTimeString() + ' '+ now.toLocaleDateString();
+  colors =" ";
+
+ colors = "rbg";
+ temp_color = colors.indexOf(color);
+temp_index = colors.charAt(temp_color);
+var  c= String(arr[temp_index]);
+var b = dt.bold(c);
+document.write(b.fontcolor(c));
+}
+</script>
+</body>
+</html>

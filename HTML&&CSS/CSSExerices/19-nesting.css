@@ -1,0 +1,27 @@
+.container,.container2
+{
+	width: 6000px;
+	background: #DDD;
+	padding: 10px;
+	margin: 10px;
+}
+p{
+	color: deeppink;
+	padding: 15px;
+	font-size: 20px;
+}
+.container p
+{
+	color: darkolivegreen;
+	
+}
+.container2 p 
+{
+	color: dodgerblue;
+	font-family: monospace;
+	
+}
+.container2 p ,.container p
+{
+	font-size: 40px;
+}

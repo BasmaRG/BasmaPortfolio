@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* ------------ My style -----------------------------------*/
+body 
+{
+    background-color: #e7e7e7
+}
+/*--------------- header begin */
+#header-area
+{
+   /* background-color: #fc4646;*/
+    background-color: #f5533a;
+    height: 410px;
+    /*width: 1600 px;  */  
+}
+#header-area h1
+{
+    color: #fff;
+    font-size: 118px;
+    text-align: center;
+    padding-top: 70px;
+}
+#header-area p
+{
+    color: #fff;
+    width: 888px;
+    font-size: 27px;
+    text-align: center;
+    margin: 20px auto 0 auto; 
+    line-height: 1.4em;
+}
+#header-area a
+{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+#header-area img:hover
+{
+    opacity: 0.8;
+    filter: alpha(opacity=40);
+}
+/* header end  ------------------- */
+
+/*------------------ navbar begin */
+#navbar-area
+{
+    background-color: #fff;
+    height: 100px;
+}
+#navbar-area #logo
+{
+    float: left;
+    line-height: 100px;
+   padding-top: 30px;
+   padding-bottom: 20px;
+}
+#navbar-area ul
+{
+    float: right;
+    line-height: 100px;
+}
+#navbar-area ul li
+{
+   display: inline;
+    margin: 0 25px 0 25px;
+}
+#navbar-area ul li a
+{
+    font-size: 17px;
+    color: black;
+}
+#navbar-area ul li a:hover
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.clear
+ {
+     clear: both;
+}
+#nav-center
+{ width: 1065px; margin: 0 auto;}
+/* header End-------------------------- */
+
+
+/*-------------------------- mid begin */
+#mid-area
+{
+    text-align: center;
+}
+#mid-area h2
+{
+    font-size: 43px;
+    color: #000;
+    padding-top: 80px;
+}
+#mid-area p
+{
+    width: 1000px;
+    font-size: 27px;
+    line-height: 1.4em;
+    /*: 20px 120px 20px 120px;*/
+    margin: 40px auto 0 auto;
+}
+#mid-area ul
+{
+    margin-top: 55px;
+}
+#mid-area ul  li
+{
+   width: 339px;
+    height: 277px;
+    margin: 5px;
+    display: inline-block;
+    background-color:#f5533a;
+    
+}
+/* mid end------------------------- */
+
+/*------------------    begin footer*/
+
+#footer-area
+{
+    height: 100px;
+    margin-top: 326px;
+    background-color: #515151;
+    color: white;
+    font-size: 18px;
+    
+}
+#footer-area ul
+{ 
+   padding-top: 40px;
+   text-align: center;
+}
+#footer-area ul li
+{
+    color: #fff;
+    display: inline;
+}
+#footer-area ul li a
+{
+    color: #fff;
+   
+}
+/*End footer  ----------------------*/
+
+
+
+

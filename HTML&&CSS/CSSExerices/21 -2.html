@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="exercise html">
+	<title>Form</title>
+	<link rel="stylesheet">
+	<style>
+		body{background:#EFEFEF;font-family: Arial,Tahoma}
+		fieldset
+		{
+			background: #FFF;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		legend
+		{
+			background: #FFF;
+			border: 1px solid #CCC;
+			padding: 7px;
+		}
+		/*label,input,select{ display: block;	}*/
+		label{	margin-bottom: 10px; display: block;}
+		input{	margin-bottom: 10px; /*padding: 8px; width: 300px;*/ }
+		input[type="text"] ,input[type="password"],textarea
+		{
+			padding: 8px;
+			width: 300px;
+			display: block;
+		}
+		hr{ border: 1px solid #EEE;}
+		textarea{ height: 200px; margin-bottom: 10px;}
+	</style>
+</head>
+<body>
+	<form name="register">
+	  <fieldset >
+	    <legend>Personal Information</legend>
+		 <label>Username</label> 
+		  <input type="text" name="username">
+		  <label>Password</label>
+		  <input type="password" name="password">
+		  <label>Email</label>
+		  <input type="text" name="email">
+		  <label>Gender</label>
+		  <select name="gender">
+		    <option>Male</option>
+			 <option>Female</option> 
+		  </select>
+	  </fieldset>
+	  <fieldset>
+		<legend>Your Favourites</legend>
+		<label>Your Favourites Text Editor</label>  
+		<input type="radio" name="editor"> Komodo<br>
+		<input type="radio" name="editor"> Netbeans<br>
+		<input type="radio" name="editor">  Sublimetext
+      <hr>
+		<label>Your Favourites browser</label>  
+		<input type="checkbox" name="browser"> Opera<br>
+		<input type="checkbox" name="browser"> Mozilla Firefox<br>
+		<input type="checkbox" name="browser"> Google Chrome
+		<hr>
+		<label>Your Operating System</label>  
+		<input type="radio" name="op"> win10<br>
+		<input type="radio" name="op"> win8<br>
+		<input type="radio" name="op"> win7  
+	  </fieldset>
+	  <fieldset>
+		<legend>Yor Message</legend>
+		<textarea></textarea>
+		<input type="submit" value="send your data">  
+	  </fieldset>	
+	</form>
+</body>	
+</html>

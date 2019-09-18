@@ -1,0 +1,9 @@
+div:after
+{
+	content:"welcome 44";
+	color: #00F;
+}
+div
+{
+	color: chartreuse;
+}

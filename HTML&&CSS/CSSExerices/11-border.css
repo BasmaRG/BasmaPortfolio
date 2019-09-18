@@ -1,0 +1,23 @@
+div
+{
+	background: #DDD;
+	padding: 10px;
+	margin: 10px;
+	/*border-width: 1px;
+	border-style: solid;
+	border-color: #00F;*/
+	
+	/*border-bottom: 1px solid #0f0;*/
+	/*border-width: 1px 2px;*/
+	
+	/*border-width: 1px 2px*/ 4px; /*Top right bottom left */
+	/*border-style: solid dashed;
+	border-color: #00F;*/
+	
+	/*border-bottom-width: 2px;
+	border-bottom-style: groove;
+	border-bottom-color: aqua;*/
+	
+	border: 2px solid #676767;
+	/*border-left: 2px groove #F00;*/
+}

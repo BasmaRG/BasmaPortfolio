@@ -1,0 +1,14 @@
+.left
+{
+	width: 300px;
+	background: #00F;
+	color: #FFF;
+	padding: 10px;
+	/*float: none;*/ /*default*/
+	margin: 10px;
+	float: left;
+}
+.left span
+{
+	float: right;
+}

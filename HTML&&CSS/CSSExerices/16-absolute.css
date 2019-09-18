@@ -1,0 +1,23 @@
+body
+{
+	background: #DDD;
+	height: 300px;
+}
+.parent
+{
+ width: 940px;
+	background: #FFF;
+	padding: 10px;
+	height: 60px;
+	position: relative;
+}
+.abs  /*مش هنعمله عرض لانه هياخده طبقا ل ابوه*/
+{
+	background: #0FF;
+	color:darkgrey;
+	padding: 10px;
+   top: 10px;
+	right: 50px;
+	/*position: fixed;*/  /*هيطلع برا ابوه*/
+	position: absolute;  /*لازم ابوه يكون نسبى */
+}

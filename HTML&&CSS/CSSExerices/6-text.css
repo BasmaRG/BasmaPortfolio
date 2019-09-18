@@ -1,0 +1,32 @@
+div
+{
+	/*div properties*/
+	/*width: 500px;*/
+	width: 300px;
+	padding: 10px;
+	background-color: #DDD;
+	margin: 10px 0;
+	/*text properites*/
+	color: #00F;
+	/*letter-spacing: 5px;*/
+	letter-spacing: normal;
+	/*line-height: 2em;*/
+	line-height: 50px;
+	text-align: right;
+	text-indent: 40px;
+	/*white-space:nowrap;*/
+	white-space: normal;
+}
+div span
+{
+	color: #f00;
+	text-decoration: line-through;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}

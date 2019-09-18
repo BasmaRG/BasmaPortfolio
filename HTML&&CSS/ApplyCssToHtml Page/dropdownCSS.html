@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bouns ddropdown menu </title>
+	<style>
+
+.navbar {
+  height: 46px;
+  background-color: #bdd2ff ;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+
+.dropdown {
+    float: left;
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    color:#324b8e;
+    font-size: 16px;    
+    border: soild;
+    padding: 14px 16px;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #cfdeff;
+}
+
+.dropdown-one {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  background-color: #cfdeff;
+  min-width: 160px;
+  
+}
+
+.dropdown-two {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 160px;
+  top: 0px;
+  min-width: 160px;
+  background-color: #cfdeff;
+}
+
+.dropdown:hover .dropdown-one, #link1:hover > .dropdown-two {
+  display: block;
+}
+
+.dropdown-one .dItem {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-one .dItem:hover, .dropdown-two a:hover {
+    background-color: #aabde7;
+}
+
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+	</style>
+</head>
+<body>
+<!--   ****** NavBar ****** -->
+    <div class="navbar">
+      
+      <div class="dropdown">
+        <div class="dropbtn">menu item 1 <i class="arrow down"></i></div>
+<!--         Main Dropdown -->
+        <div class="dropdown-one">
+          <div id="link1" class="dItem" href="#">menu item2 <i class="arrow down"></i>
+<!--             Inside Dropdown -->
+            <div class="dropdown-two">
+              <div class="dItem" id="file" href="#">menu item3</div>
+            </div>
+          </div>
+          <div class="dItem" href="#">menu item</div>
+          <div class="dItem" href="#">menu item</div>
+        </div>
+      </div>
+	  <a href="#">menu item</a>
+      <a href="#">menu item</a> 
+    </div>
+   
+
+</body>
+</html>

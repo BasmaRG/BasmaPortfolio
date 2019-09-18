@@ -1,0 +1,31 @@
+.nav-item a:hover{
+    color: #27ccc0 !important;
+    cursor: pointer;
+}
+li.active a
+{
+	color: #27ccc0 !important;
+}
+/*slide color */
+.div1{
+	background-color: #07aca0;
+	
+}
+.div2{
+	background-color: #17bcb0;
+
+}
+.div3{
+	background-color: #27ccc0;
+
+}
+.blk{
+	display: flex;
+}
+content{
+	background: white;
+}
+
+#cars_color{
+	color: #27ccc0;
+} 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script Day2 </title>
+</head>
+<body onload="Go();">
+<script type="text/javascript">
+function Go(){
+	//alert("in function");
+	var arr = new Array(10);
+	arr[0]="javascript tip 1";
+	arr[2]="javascript tip 2";
+	arr[3]="javascript tip 3";
+	arr[4]="javascript tip 4";
+	arr[5]="javascript tip 5";
+	arr[6]="javascript tip 6";
+	arr[7]="javascript tip 7";
+	arr[8]="javascript tip 8";
+	arr[9]="javascript tip 9";
+	arr[1]="javascript tip 10";
+	//debugger;
+	var num_tip =Math.round(Math.random()*10);
+	//alert(num_tip);
+	var tip = "Tip of the day:" + arr[num_tip];
+	alert(tip);
+}
+</script>
+</body>
+</html>

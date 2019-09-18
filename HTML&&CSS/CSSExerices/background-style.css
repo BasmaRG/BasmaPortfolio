@@ -1,0 +1,13 @@
+div
+{
+   width: 500px;
+	height: 500px;
+	background: #0000FF url("gradientcolo6.jpg") no-repeat scroll 10% 40%; /*this shorter*/
+	
+	/*background-color: #0000FF;
+	background-image:url("gradientcolo6.jpg");
+	background-repeat:no-repeat;
+   background-attachment:scroll ;
+	background-position:10% 40%;*/
+
+}

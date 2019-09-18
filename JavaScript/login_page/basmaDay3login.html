@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script Day3 </title>
+</head>
+  <!--***************** Q4 *********************-->
+
+    <form action="redirect.html" method="get" name="f1">
+    	<label>Name</label>
+    	<input type="text" name="usrname" id="uname" value="Enter your user name here" onfocus="document.getElementById('uname').innerText=''; value='';" onblur=" value ='Enter your user name here';" onchange="checkUsename();"><br>
+    	<label>password</label>
+    	<input type="password" name="password" id="pass"><br>
+    	<button>submit</button>
+    </form>
+
+	<script type="text/javascript">
+     function checkUsename(){
+        
+            var user_name = document.getElementById("uname").value;
+            //debugger;
+            if(user_name != '' && !isFinite(user_name) && user_name.lenght >3)
+            {
+                 document.getElementById("pass").focus();
+
+            }
+            else
+            {
+                document.getElementById('uname').innerText= "user name invalid";
+            }
+        }   
+    </script>
+</body>
+</html>

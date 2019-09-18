@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>redirect </title>
+</head>
+<body>
+<script type="text/javascript">
+
+var parts = document.URL.split("?"); // the right part of the URL
+var params = parts[1].split("&"); // [param1=1, param2=2]
+//var par1 =  params[0].split("=");
+//
+//document.write('welcome' + par1[1] ); // only value
+document.write('welcome ' + params[0]+' && '+params[1] );
+
+
+</script>
+</body>
+</html>

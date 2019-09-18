@@ -1,0 +1,23 @@
+#divimg{
+   
+   /*height: 100px;
+   width: 200px; */
+   background-image: url('bg1.png');
+}
+/*#sp1
+{
+	margin-left: -210px;
+	margin-top: 10px;
+	font-size: 12px;
+}*/
+
+img{
+	width: 300px;
+	height: 150px;
+}
+#title{
+	text-align: center;
+}
+/*#link{
+	display: inline;
+}*/

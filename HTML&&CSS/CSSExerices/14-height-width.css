@@ -1,0 +1,20 @@
+.main
+{
+	color:chartreuse;
+	background: black;
+	/*width: 900px;*/
+}
+.child
+{
+	/*width: 600px;*/
+	background: cornsilk;
+	color: coral;
+	/*min-width: 50px;*/
+	/*max-width: 200px;*/ /*not run */ 
+	width: 50px;
+}
+button
+{
+	min-width: 100px;
+	max-width: 150px;
+}

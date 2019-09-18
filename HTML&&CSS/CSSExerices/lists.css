@@ -1,0 +1,11 @@
+ul
+{
+	list-style: circle;
+	/*list-style-position: inside;*/
+	list-style-position: outside;
+	/*list-style-image: url('gradien.jpg');*/
+}
+ul li
+{
+	border: 1px solid #DDD;
+}
